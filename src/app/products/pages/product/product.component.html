@@ -1,0 +1,14 @@
+<p>product works!</p>
+
+<app-price
+*ngIf="isButtonToggle"
+[price]="currentPrice"
+/>
+
+<button
+(click)="isButtonToggle = !isButtonToggle"
+> Toggle me</button>
+
+<button
+(click)="increasePrice()"
+> +1 price</button>
